@@ -1,4 +1,8 @@
-﻿# Z-Wave Home Automation library for .NET
+[![Build status](https://ci.appveyor.com/api/projects/status/9x2lxm4b1x4bmru9?svg=true)](https://ci.appveyor.com/project/genemars/zwave-lib-dotnet)
+[![NuGet](https://img.shields.io/nuget/v/ZWaveLib.svg)](https://www.nuget.org/packages/ZWaveLib/)
+![License](https://img.shields.io/github/license/genielabs/zwave-lib-dotnet.svg)
+
+# Z-Wave Home Automation library for .NET
 
 ## Features
 
@@ -28,6 +32,9 @@ controller.ControllerStatusChanged += Controller_ControllerStatusChanged;;
 controller.DiscoveryProgress += Controller_DiscoveryProgress;
 controller.NodeOperationProgress += Controller_NodeOperationProgress;
 controller.NodeUpdated += Controller_NodeUpdated;
+
+// Open connection
+controller.Connect();
 
 // Issue some commands on a dimmer and a thermostat node
 
